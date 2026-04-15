@@ -1,0 +1,23 @@
+node_modules/
+dist/
+build/
+.env
+.DS_Store
+*.log
+.idea/
+.vscode/
+coverage/
+*.tsbuildinfo
+*.bak
+
+# ── Personal data (never commit your real resume) ───────────────────────────
+resume.json
+
+# ── Generated output ─────────────────────────────────────────────────────────
+output/
+
+# ── Legacy JS files (superseded by TypeScript source) ────────────────────────
+curriculos.js
+curriculos-docx.js
+gerar.js
+base.json

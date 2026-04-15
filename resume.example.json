@@ -1,0 +1,51 @@
+{
+  "_readme": "Copie este arquivo para resume.json e preencha com seus dados. resume.json é gitignored — seus dados pessoais ficam apenas localmente.",
+
+  "nome": "Seu Nome Completo",
+  "email": "seu.email@exemplo.com",
+  "telefone": "+55 11 99999-9999",
+  "linkedin": "linkedin.com/in/seu-perfil",
+  "github": "github.com/seu-usuario",
+  "portfolio": "seu-portfolio.com.br",
+
+  "experiencias": [
+    {
+      "empresa": "Nome da Empresa (deve corresponder exatamente à chave em config/impact-rules.json para enriquecimento)",
+      "cargo": "Engenheiro de Software",
+      "periodo": "2023 – Atual",
+      "stack": "Node.js, TypeScript, React, PostgreSQL, Docker",
+      "atividades": [
+        "Desenvolvimento de APIs REST escaláveis com Express e TypeScript",
+        "Criação de interfaces modernas com React",
+        "Implementação de pipelines CI/CD com GitHub Actions",
+        "Testes unitários e E2E com Jest e Cypress"
+      ],
+      "resultados": [
+        "Redução de 30% no tempo de resposta das APIs",
+        "Cobertura de testes elevada para 85%"
+      ]
+    },
+    {
+      "empresa": "Empresa Anterior",
+      "cargo": "Desenvolvedor Júnior",
+      "periodo": "2021 – 2023",
+      "stack": "Java, Spring Boot, MySQL",
+      "atividades": [
+        "Desenvolvimento de serviços backend com Spring Boot",
+        "Manutenção e otimização de queries SQL"
+      ],
+      "resultados": [
+        "Melhoria de 40% na performance das queries"
+      ]
+    }
+  ],
+
+  "formacao": [
+    "Nome da Universidade – Bacharelado em Engenharia de Software (2019 – 2023)"
+  ],
+
+  "idiomas": [
+    "Português – Nativo",
+    "Inglês – Intermediário"
+  ]
+}

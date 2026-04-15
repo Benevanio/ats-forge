@@ -1,0 +1,26 @@
+{
+  "node_react": {
+    "filename": "Curriculo_Node_React.docx",
+    "title": "Engenheiro Full Stack Node.js"
+  },
+  "java_mulesoft": {
+    "filename": "Curriculo_Java_MuleSoft.docx",
+    "title": "Engenheiro de Integrações Java MuleSoft"
+  },
+  "java_backend": {
+    "filename": "Curriculo_Java_Backend.docx",
+    "title": "Engenheiro Backend Java"
+  },
+  "node_backend": {
+    "filename": "Curriculo_Node_Backend.docx",
+    "title": "Engenheiro Backend Node.js"
+  },
+  "react_frontend": {
+    "filename": "Curriculo_React_Frontend.docx",
+    "title": "Engenheiro Frontend React"
+  },
+  "suporte_api": {
+    "filename": "Curriculo_Suporte_API.docx",
+    "title": "Engenheiro de Suporte a APIs"
+  }
+}

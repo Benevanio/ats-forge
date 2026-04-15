@@ -1,0 +1,13 @@
+{
+  "node_react": "Engenheiro de Software com sólida experiência em desenvolvimento fullstack utilizando Node.js, React e TypeScript. Especializado na construção de APIs REST escaláveis com Express, interfaces web modernas e pipelines de qualidade com Jest, Cypress e CI/CD. Experiência com aplicações desktop nativas via Tauri e Rust, entrega automatizada com Jenkins/Gitea e documentação com Swagger.",
+
+  "java_mulesoft": "Engenheiro de Software especializado em integrações corporativas de grande escala com MuleSoft, Java Spring Boot e API-Led Connectivity. Histórico comprovado de +40% na rastreabilidade de integrações e +25% de performance em fluxos críticos. Domínio em DataWeave, monitoramento com Kibana, cloud AWS e code reviews técnicos de alto impacto.",
+
+  "java_backend": "Engenheiro de Software com foco em backend Java de alta performance utilizando Spring Boot e bancos relacionais (MySQL, PostgreSQL). Experiência na construção de APIs REST escaláveis com Clean Architecture, integração com sistemas corporativos e entrega contínua. Comprometido com qualidade de código, segurança e boas práticas de engenharia.",
+
+  "node_backend": "Engenheiro de Software especializado em backend com Node.js e TypeScript, desenvolvendo APIs REST robustas com Express e SQLite. Experiência em integração com aplicações desktop nativas via Rust e Tauri, automação de CI/CD com Jenkins e Gitea e documentação técnica com Swagger. Foco em baixo consumo de recursos e rastreabilidade de entrega.",
+
+  "react_frontend": "Engenheiro de Software com foco em desenvolvimento frontend avançado utilizando React.js e TypeScript com arquitetura de componentes escalável. Especializado em integração com aplicações desktop via Tauri e Rust, garantindo performance nativa aliada a interfaces modernas. Qualidade assegurada por testes E2E com Cypress e unitários com Jest.",
+
+  "suporte_api": "Engenheiro de Software com experiência em suporte técnico a APIs e integrações corporativas MuleSoft. Atuação em troubleshooting de fluxos críticos, análise de logs com Kibana, documentação de APIs com Swagger e comunicação técnica eficaz com times de produto e clientes. Capacidade de aumentar rastreabilidade em +40% e reduzir o tempo de resposta a incidentes."
+}

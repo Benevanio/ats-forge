@@ -1,0 +1,41 @@
+{
+  "_comment": "Map company names (exactly as in resume.json) to impact rules. When an activity matches any keyword, the result is appended to that activity. Each result is used at most once per company per resume.",
+
+  "Geodigitus (Frannar)": [
+    {
+      "keywords": ["desktop", "rust", "tauri", "multiplataforma"],
+      "result": "aplicações desktop com performance nativa e baixo uso de memória"
+    },
+    {
+      "keywords": ["ci/cd", "jenkins", "gitea", "pipeline", "automação"],
+      "result": "pipeline de entrega automatizada com alta rastreabilidade"
+    },
+    {
+      "keywords": ["jest", "cypress", "testes", "teste"],
+      "result": "cobertura de testes automatizados com Jest e Cypress, elevando a confiabilidade das entregas"
+    },
+    {
+      "keywords": ["swagger", "documentação"],
+      "result": "documentação técnica padronizada com Swagger, reduzindo fricção de onboarding"
+    }
+  ],
+
+  "SysMap Solutions": [
+    {
+      "keywords": ["mulesoft", "integraç", "api-led", "integração"],
+      "result": "+40% na rastreabilidade de integrações corporativas"
+    },
+    {
+      "keywords": ["spring boot", "java", "performance", "fluxo"],
+      "result": "+25% de performance em fluxos de integração críticos"
+    },
+    {
+      "keywords": ["node.js", "node", "rest", "frontend", "react"],
+      "result": "-30% no tempo de resposta de serviços após otimizações"
+    },
+    {
+      "keywords": ["kibana", "logs", "monitoramento"],
+      "result": "visibilidade total de serviços em produção via Kibana"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "node_react": {
+    "Languages":    ["TypeScript", "JavaScript"],
+    "Backend":      ["Node.js", "Express.js", "REST APIs"],
+    "Frontend":     ["React.js", "Hooks", "Component Architecture"],
+    "Testing":      ["Jest", "Cypress", "E2E Testing", "TDD"],
+    "Databases":    ["SQLite", "PostgreSQL"],
+    "DevOps":       ["CI/CD", "Jenkins", "Gitea", "Docker"],
+    "Tools":        ["Swagger", "Conventional Commits", "Husky"]
+  },
+
+  "java_mulesoft": {
+    "Languages":        ["Java", "TypeScript", "JavaScript"],
+    "Integration":      ["MuleSoft", "API-Led Connectivity", "DataWeave", "REST APIs", "SOAP"],
+    "Backend":          ["Spring Boot", "Node.js"],
+    "Databases":        ["MySQL", "PostgreSQL"],
+    "Cloud & DevOps":   ["AWS", "CI/CD", "Jenkins"],
+    "Observability":    ["Kibana", "Log Analysis", "Monitoring"],
+    "Tools":            ["Swagger", "Postman"]
+  },
+
+  "java_backend": {
+    "Languages":    ["Java", "TypeScript"],
+    "Backend":      ["Spring Boot", "REST APIs", "Hibernate"],
+    "Databases":    ["MySQL", "PostgreSQL"],
+    "Architecture": ["Clean Architecture", "SOLID", "Design Patterns"],
+    "DevOps":       ["CI/CD", "Jenkins", "Maven"],
+    "Tools":        ["Swagger", "Postman"]
+  },
+
+  "node_backend": {
+    "Languages":    ["TypeScript", "JavaScript", "Rust"],
+    "Backend":      ["Node.js", "Express.js", "REST APIs"],
+    "Desktop":      ["Tauri", "Rust"],
+    "Databases":    ["SQLite"],
+    "DevOps":       ["CI/CD", "Jenkins", "Gitea"],
+    "Tools":        ["Swagger", "Conventional Commits", "Husky"]
+  },
+
+  "react_frontend": {
+    "Languages":    ["TypeScript", "JavaScript"],
+    "Frontend":     ["React.js", "Hooks", "Component Architecture", "State Management"],
+    "Desktop":      ["Tauri", "Rust"],
+    "Testing":      ["Cypress", "Jest", "E2E Testing", "TDD"],
+    "DevOps":       ["CI/CD", "Jenkins", "Gitea"],
+    "Tools":        ["Swagger"]
+  },
+
+  "suporte_api": {
+    "APIs & Integration":  ["REST APIs", "MuleSoft", "API-Led Connectivity", "DataWeave"],
+    "Languages":           ["Java", "TypeScript", "JavaScript"],
+    "Backend":             ["Node.js", "Spring Boot"],
+    "Observability":       ["Kibana", "Log Analysis", "Monitoring"],
+    "Documentation":       ["Swagger", "Postman"],
+    "Support":             ["Troubleshooting", "Root Cause Analysis", "Incident Response", "SLA"]
+  }
+}

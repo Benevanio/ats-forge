@@ -1,202 +1,219 @@
-# 📄 Gerador Automático de Currículos - CV ATS Otimizado
+# ATS CV Generator
 
-Um projeto Python que gera automaticamente currículos personalizados em PDF e Word, otimizados para sistemas ATS (Applicant Tracking System) como Greenhouse, Lever e Workday.
+> **Template** — Generate ATS-friendly resumes in DOCX and Markdown from a single JSON file.  
+> Built with **TypeScript** and **Clean Architecture**.
 
-## 🎯 Sobre o Projeto
+## Features
 
-Este projeto foi desenvolvido para automatizar a criação de currículos personalizados para diferentes stacks tecnológicos e idiomas. Ele gera múltiplas versões otimizadas para vagas específicas, aumentando as chances de aprovação em sistemas de triagem automática.
-
-## ✨ Funcionalidades
-
-### 📊 Geração de PDFs (index.py)
-  - **4 especializações técnicas:**
-    - Full Stack MERN (MongoDB, Express, React, Node.js)
-    - Back-End Node.js & TypeScript
-    - Back-End Java & Spring Boot
-    - Integrações MuleSoft & API-Led Connectivity
-  - **2 idiomas:** Português (PT-BR) e Inglês (EN-US)
-
-### 📝 Geração de Word (doc.py)
-- Currículo específico para vagas **Java Pleno**
-- Formato idêntico ao PDF, adaptado para Word
-- Inclui informações específicas para RH
-
-### 🔧 Otimizações ATS
-- Formatação compatível com leitores automáticos
-- Palavras-chave estratégicas por stack
-- Métricas quantificáveis de performance
-- Estrutura padronizada e limpa
-
-## 🚀 Como Usar
-
-### Pré-requisitos
-
-```bash
-# Instalar dependências Python
-pip install reportlab python-docx
-```
-
-### Executando o Gerador
-
-#### 1. Gerar todos os CVs em PDF:
-```bash
-python index.py
-```
-
-**Saída esperada:**
-```
-Gerado: Benevanio_CV_MERN_FullStack_PT.pdf
-Gerado: Benevanio_CV_MERN_FullStack_EN.pdf
-Gerado: Benevanio_CV_Node_Backend_PT.pdf
-Gerado: Benevanio_CV_Node_Backend_EN.pdf
-Gerado: Benevanio_CV_Java_Backend_PT.pdf
-Gerado: Benevanio_CV_Java_Backend_EN.pdf
-Gerado: Benevanio_CV_MuleSoft_Integrations_PT.pdf
-Gerado: Benevanio_CV_MuleSoft_Integrations_EN.pdf
-Gerado: Benevanio_CV_Hybrid_Systems_PT.pdf
-
-✅ Todos os currículos foram gerados com sucesso!
-```
-
-#### 2. Gerar CV Java em Word:
-```bash
-python doc.py
-```
-
-### 📁 Estrutura de Arquivos Gerados
-
-```
-/projeto
-├── index.py                                    # Gerador de PDFs
-├── doc.py                                     # Gerador de Word
-├── README.md                                  # Este arquivo
-└── [CVs Gerados]
-    ├── Benevanio_CV_MERN_FullStack_PT.pdf
-    ├── Benevanio_CV_MERN_FullStack_EN.pdf
-    ├── Benevanio_CV_Node_Backend_PT.pdf
-    ├── Benevanio_CV_Node_Backend_EN.pdf
-    ├── Benevanio_CV_Java_Backend_PT.pdf
-    ├── Benevanio_CV_Java_Backend_EN.pdf
-    ├── Benevanio_CV_MuleSoft_Integrations_PT.pdf
-    ├── Benevanio_CV_MuleSoft_Integrations_EN.pdf
-    ├── Benevanio_CV_Hybrid_Systems_PT.pdf
-    └── Curriculo_Java_Pleno_Identico_PDF.docx
-```
-
-## 🛠️ Personalização
-
-### Modificar Dados Pessoais
-
-Para personalizar o currículo com seus dados, edite as seguintes seções no [index.py](index.py):
-
-```python
-# Cabeçalho - Linha ~17
-story.append(Paragraph("<font size=14><b>SEU NOME</b></font>", styles["Normal"]))
-
-# Contatos - Linha ~20-24  
-story.append(Paragraph(
-    "Sua Cidade, Estado | seuemail@gmail.com | Telefone: +55 XX XXXXX-XXXX<br/>"
-    "LinkedIn: linkedin.com/in/seulinkedin | GitHub: github.com/seugithub<br/>"
-    f"Portfólio: seuportfolio.com | {language_note}",
-    styles["Normal"]
-))
-```
-
-### Adicionar Nova Especialização
-
-1. **Criar novo dicionário de dados:**
-
-```python
-cv_nova_stack_pt = {
-    "title": "Seu Título Profissional | Tecnologias Principais",
-    "summary": "Seu resumo profissional personalizado...",
-    "experience_items": [
-        "Sua experiência 1 com métricas quantificáveis...",
-        "Sua experiência 2 com resultados mensuráveis...",
-        # ... mais experiências
-    ],
-    "skills": "Suas habilidades organizadas por categorias...",
-    "projects": [
-        "Projeto 1 com descrição técnica...",
-        "Projeto 2 com tecnologias utilizadas..."
-    ],
-    "education": "Sua formação acadêmica...",
-    "language_note": language_note_pt
-}
-```
-
-2. **Adicionar à lista de geração:**
-
-```python
-all_cvs = [
-    # ... CVs existentes
-    (cv_nova_stack_pt, "Seu_CV_NovaStack_PT.pdf"),
-    (cv_nova_stack_en, "Seu_CV_NovaStack_EN.pdf")
-]
-```
-
-### Modificar Experiências e Projetos
-
-Todas as experiências incluem **métricas quantificáveis** para maior impacto:
-
-```python
-"experience_items": [
-    "Desenvolvi X funcionalidade resultando em Y% de melhoria em Z métrica",
-    "Otimizei processo ABC reduzindo tempo de resposta em X% e aumentando throughput em Y%",
-    "Implementei sistema XYZ que aumentou eficiência em Z% e reduziu custos em $X"
-]
-```
-
-## 🎯 Estratégia ATS
-
-### Palavras-chave por Stack:
-
-- **MERN:** React.js, Node.js, MongoDB, Express.js, JavaScript, TypeScript
-- **Node.js:** Node.js, TypeScript, Express, NestJS, RESTful APIs, Microservices  
-- **Java:** Spring Boot, Hibernate, JPA, Maven, JUnit, Microservices
-- **MuleSoft:** API-Led Connectivity, DataWeave, Anypoint Platform, Integration
-
-### Métricas Incluídas:
-- ✅ Percentuais de melhoria de performance
-- ✅ Redução de tempo de resposta/deploy
-- ✅ Aumento de disponibilidade/throughput
-- ✅ Cobertura de testes e qualidade
-- ✅ Economia de custos operacionais
-
-## 🔄 Versionamento de CVs
-
-Recomenda-se versionar os CVs gerados por data:
-
-```bash
-# Criar pasta com data atual
-mkdir cvs_$(date +%Y%m%d)
-python index.py
-mv *.pdf cvs_$(date +%Y%m%d)/
-```
-
-## 📋 Checklist de Uso
-
-Antes de enviar seus CVs:
-
-- [ ] ✅ Todos os PDFs foram gerados sem erros
-- [ ] 📝 Dados pessoais estão atualizados  
-- [ ] 🎯 Stack escolhido é compatível com a vaga
-- [ ] 🌐 Idioma correto (PT-BR para vagas nacionais, EN-US para internacionais)
-- [ ] 📊 Métricas estão atualizadas e realistas
-- [ ] 🔍 Palavras-chave da vaga estão presentes no CV
-
-## 💡 Dicas de Uso
-
-1. **Escolha o CV certo:** Use o CV específico para a stack da vaga
-2. **Versão em inglês:** Para vagas internacionais ou empresas multinacionais
-3. **Personalização:** Ajuste palavras-chave específicas da vaga antes de enviar
-4. **Métricas:** Mantenha métricas realistas e verificáveis
-5. **Atualização:** Regenere os CVs periodicamente com novas experiências
-
-## 📞 Suporte
-
-Para dúvidas ou melhorias neste projeto, abra uma issue ou entre em contato.
+- Generates `.docx` and `.md` resumes tailored to multiple job focuses  
+- Extracts keywords from a job description and injects them into the resume  
+- All personal data lives in a single `resume.json` (gitignored — never committed)  
+- All focus configuration lives in `config/` JSON files — no TypeScript changes needed  
+- Clean Architecture: Domain → Application → Infrastructure → Presentation  
 
 ---
 
-**Desenvolvido para otimizar o processo de candidatura a vagas tech** 🚀
+## Quick Start
+
+```bash
+# 1. Clone / use this template
+git clone https://github.com/your-user/ats-cv-generator.git
+cd ats-cv-generator
+
+# 2. Install dependencies
+npm install
+
+# 3. Create your personal resume file
+cp resume.example.json resume.json
+# ✏️  Edit resume.json with your real data
+
+# 4. Generate all resumes (DOCX)
+npm run generate -- --all
+
+# 5. Find the results in ./output/
+```
+
+---
+
+## Customization
+
+### 1. Your personal data → `resume.json`
+
+Copy `resume.example.json` to `resume.json` and fill in every field.  
+`resume.json` is gitignored — your personal data never leaves your machine.
+
+### 2. Job focuses → `config/focuses.json`
+
+Each key is a focus identifier. You can add, rename, or remove focuses.
+
+```jsonc
+{
+  "node_react": {
+    "filename": "Resume_Node_React.docx",
+    "title": "Node.js Full Stack Engineer"
+  }
+}
+```
+
+### 3. Professional profiles → `config/profiles.json`
+
+One paragraph per focus. Written in first or third person — your choice.
+
+```jsonc
+{
+  "node_react": "Software Engineer specialized in..."
+}
+```
+
+### 4. Skills → `config/skills.json`
+
+Grouped by category. Categories appear in the order defined here.
+
+```jsonc
+{
+  "node_react": {
+    "Languages": ["TypeScript", "JavaScript"],
+    "Backend":   ["Node.js", "Express.js"]
+  }
+}
+```
+
+### 5. Impact rules → `config/impact-rules.json`
+
+Maps company names (matching exactly what's in `resume.json`) to keyword-based impact statements.  
+When an activity matches any keyword in a rule, the result is appended to that activity.
+
+```jsonc
+{
+  "Acme Corp": [
+    {
+      "keywords": ["api", "rest"],
+      "result": "30% reduction in service response time"
+    }
+  ]
+}
+```
+
+---
+
+## CLI Usage
+
+```bash
+# All focuses (DOCX)
+npm run generate -- --all
+
+# Single focus
+npm run generate -- --focus=node_react
+
+# Tailored with a job description
+npm run generate -- --focus=node_react --job=job-description.txt
+
+# All focuses in Markdown
+npm run generate -- --all --markdown
+
+# With a job description + all focuses
+npm run generate -- --all --job=job-description.txt
+```
+
+**Available flags:**
+
+| Flag | Description |
+|------|-------------|
+| `--all` | Generate all configured focuses |
+| `--focus=<id>` | Generate a single focus |
+| `--job=<file>` | Path to a job description `.txt` file for keyword extraction |
+| `--markdown` | Output `.md` instead of `.docx` |
+
+---
+
+## Project Structure
+
+```
+ats-cv-generator/
+├── src/
+│   ├── domain/                     # Business rules (no external dependencies)
+│   │   ├── entities/
+│   │   │   ├── Resume.ts           # Resume + RawExperience types
+│   │   │   └── EnrichedExperience.ts
+│   │   ├── interfaces/
+│   │   │   ├── IResumeRepository.ts
+│   │   │   ├── IResumeRenderer.ts
+│   │   │   ├── IKeywordExtractor.ts
+│   │   │   ├── IOutputRepository.ts
+│   │   │   └── IConfigRepository.ts
+│   │   └── services/
+│   │       └── ImpactEnricher.ts   # Domain service: enriches activities with metrics
+│   ├── application/                # Use cases (orchestration only)
+│   │   ├── dtos/
+│   │   │   └── GenerateResumeInput.ts
+│   │   └── use-cases/
+│   │       └── GenerateResumeUseCase.ts
+│   ├── infrastructure/             # External adapters
+│   │   ├── config/
+│   │   │   └── ConfigLoader.ts     # Reads config/*.json
+│   │   ├── keyword-extractors/
+│   │   │   └── FileKeywordExtractor.ts
+│   │   ├── renderers/
+│   │   │   ├── DocxResumeRenderer.ts
+│   │   │   └── MarkdownResumeRenderer.ts
+│   │   └── repositories/
+│   │       ├── JsonResumeRepository.ts  # Reads resume.json
+│   │       └── FileOutputRepository.ts # Writes to output/
+│   ├── presentation/
+│   │   └── cli/
+│   │       ├── ArgParser.ts        # Parses CLI args
+│   │       └── CliController.ts    # Composition root + wires dependencies
+│   └── main.ts                     # Entry point
+├── config/                         # ✏️  Customize these JSON files
+│   ├── focuses.json                # Focus IDs, titles, output filenames
+│   ├── profiles.json               # Professional summaries per focus
+│   ├── skills.json                 # Skills grouped by category per focus
+│   └── impact-rules.json          # Keyword → metric rules per company
+├── resume.example.json             # Template — copy to resume.json
+├── resume.json                     # ← Your data (gitignored)
+├── output/                         # Generated resumes (gitignored)
+├── tsconfig.json
+└── package.json
+```
+
+---
+
+## Architecture
+
+```
+         CLI args
+              │
+    ┌─────────▼──────────┐
+    │  Presentation/CLI  │  ArgParser + CliController
+    └─────────┬──────────┘
+              │ GenerateResumeInput
+    ┌─────────▼──────────┐
+    │   Application      │  GenerateResumeUseCase
+    └──┬───┬───┬───┬─────┘
+       │   │   │   │        (all via interfaces)
+       │   │   │   └──► IOutputRepository
+       │   │   └──────► IKeywordExtractor
+       │   └──────────► IResumeRenderer
+       └──────────────► IResumeRepository + IConfigRepository
+              │
+    ┌─────────▼──────────┐
+    │   Infrastructure   │  Concrete implementations
+    └────────────────────┘
+```
+
+The domain layer has **zero external dependencies** — no `fs`, no `docx`, no `path`.
+
+---
+
+## Building (compiled output)
+
+```bash
+npm run build          # compiles to dist/
+npm run generate:compiled -- --all
+```
+
+---
+
+## License
+
+MIT

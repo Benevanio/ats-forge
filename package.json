@@ -1,0 +1,33 @@
+{
+  "name": "ats-cv-generator",
+  "version": "2.0.0",
+  "description": "ATS-friendly resume generator (DOCX + Markdown) — Clean Architecture, TypeScript template",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "generate": "ts-node src/main.ts",
+    "generate:compiled": "node dist/main.js",
+    "setup": "cp resume.example.json resume.json",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "resume",
+    "cv",
+    "ats",
+    "generator",
+    "typescript",
+    "clean-architecture"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "docx": "^9.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.39",
+    "rimraf": "^5.0.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
